@@ -1,0 +1,26 @@
+name: Server work
+description: An endpoint, a table or a server change that a screen is waiting on. Goes on the Design to app board.
+title: "Server: "
+labels: ["backend"]
+projects: ["rollpayments-com/5"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What the server needs to do
+    validations:
+      required: true
+  - type: input
+    id: unblocks
+    attributes:
+      label: Unblocks
+      description: The card or cards waiting on this, such as "#391".
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      description: One line per thing that can be tested, such as "The API refuses … from a non-admin".
+      value: |
+        - [ ] 
+    validations:
+      required: true

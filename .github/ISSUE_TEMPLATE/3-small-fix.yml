@@ -1,0 +1,25 @@
+name: Small fix
+description: About an hour of work on something already live, or a gap found when a card was checked. Goes on the Design to app board.
+title: "Fix: "
+labels: ["handoff"]
+projects: ["rollpayments-com/5"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong or missing
+    validations:
+      required: true
+  - type: input
+    id: from
+    attributes:
+      label: Found on
+      description: The card it came from, if any, such as "#380".
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      value: |
+        - [ ] 
+    validations:
+      required: true

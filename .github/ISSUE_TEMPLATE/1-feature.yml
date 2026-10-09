@@ -1,0 +1,32 @@
+name: Feature
+description: A new feature or a change to how something works. Goes on the Design to app board.
+title: "Feature: "
+labels: ["handoff"]
+projects: ["rollpayments-com/5"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What it does
+      description: In plain words, what a gym, an academy or a student will see or be able to do.
+    validations:
+      required: true
+  - type: textarea
+    id: design
+    attributes:
+      label: Design
+      description: Where the design is, such as commits on a branch, a handoff entry or screenshots.
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      description: One line per behaviour someone can test by using the app.
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: server
+    attributes:
+      label: Server work
+      description: What it needs from the API, or "None". Server work gets its own card, linked here.
